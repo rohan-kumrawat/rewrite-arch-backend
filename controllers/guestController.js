@@ -7,6 +7,7 @@ const submitRequirement = async (req, res) => {
     const requirement = new Requirement({
       name: req.body.name,
       phoneNumber: req.body.phoneNumber,
+      email: req.body.email,
       requirement: req.body.requirement,
       submittedBy: "guest",
     });
